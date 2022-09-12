@@ -1,0 +1,55 @@
+[
+  {
+    "itemType": "preprint",
+    "creators": [
+      {
+        "firstName": "Chi",
+        "lastName": "Feng",
+        "creatorType": "author"
+      },
+      {
+        "firstName": "Youssef M.",
+        "lastName": "Marzouk",
+        "creatorType": "author"
+      }
+    ],
+    "notes": [
+      {
+        "note": "Comment: 33 pages, 16 figures"
+      }
+    ],
+    "tags": [
+      {
+        "tag": "Statistics - Computation"
+      },
+      {
+        "tag": "Statistics - Methodology"
+      }
+    ],
+    "seeAlso": [],
+    "attachments": [
+      {
+        "title": "arXiv Fulltext PDF",
+        "url": "https://arxiv.org/pdf/1903.11187.pdf",
+        "mimeType": "application/pdf"
+      },
+      {
+        "title": "arXiv.org Snapshot",
+        "url": "http://arxiv.org/abs/1903.11187",
+        "mimeType": "text/html"
+      }
+    ],
+    "title": "A layered multiple importance sampling scheme for focused optimal Bayesian experimental design",
+    "date": "2019-03-26",
+    "abstractNote": "We develop a new computational approach for \"focused\" optimal Bayesian experimental design with nonlinear models, with the goal of maximizing expected information gain in targeted subsets of model parameters. Our approach considers uncertainty in the full set of model parameters, but employs a design objective that can exploit learning trade-offs among different parameter subsets. We introduce a new layered multiple importance sampling scheme that provides consistent estimates of expected information gain in this focused setting. This sampling scheme yields significant reductions in estimator bias and variance for a given computational effort, making optimal design more tractable for a wide range of computationally intensive problems.",
+    "url": "http://arxiv.org/abs/1903.11187",
+    "extra": "arXiv:1903.11187 [stat]",
+    "publisher": "arXiv",
+    "number": "arXiv:1903.11187",
+    "DOI": "10.48550/arXiv.1903.11187",
+    "archiveID": "arXiv:1903.11187",
+    "libraryCatalog": "arXiv.org",
+    "accessDate": "2022-09-09T15:52:01Z",
+    "id": "MJhy20H5"
+  }
+]

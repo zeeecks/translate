@@ -42,7 +42,8 @@ Zotero.Translators = Object.assign(Zotero.Translators, new function() {
 	 *                                           retrieved from storage.
 	 */
 	this.init = async function() {
-		var translators = await Zotero.Repo.getAllTranslatorMetadata();
+		let xhr = await Zotero.HTTP.request('GET', '../repo/metadata', { responseType: 'json' }); 
+    var translators = xhr.response;
 		
 		this._cache = {"import":[], "export":[], "web":[], "search":[]};
 		_translators = {};
@@ -88,7 +89,8 @@ Zotero.Translators = Object.assign(Zotero.Translators, new function() {
 	 */
 	this.getCodeForTranslator = Zotero.Promise.method(async function (translator) {
 		if (translator.code) return translator.code;
-		let code = await Zotero.Repo.getTranslatorCode(translator.translatorID);
+		let xhr = await Zotero.HTTP.request('GET', `../repo/${translator.translatorId}`, { responseType: 'text/javascript' }); 
+    let code = xhr.response;
 		translator.code = code;
 		return code;
 	});

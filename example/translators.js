@@ -89,7 +89,7 @@ Zotero.Translators = Object.assign(Zotero.Translators, new function() {
 	 */
 	this.getCodeForTranslator = Zotero.Promise.method(async function (translator) {
 		if (translator.code) return translator.code;
-		let xhr = await Zotero.HTTP.request('GET', `../repo/${translator.translatorId}`, { responseType: 'text/javascript' }); 
+		let xhr = await Zotero.HTTP.request('GET', `../repo/${translator.translatorID}`, { responseType: 'text/javascript' }); 
     let code = xhr.response;
 		translator.code = code;
 		return code;

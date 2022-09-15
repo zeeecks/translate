@@ -101,7 +101,7 @@ function addLocationPropToDoc(doc, docURL) {
 window.addEventListener('DOMContentLoaded', async function() {
 	Zotero.Debug.init(1);
 	await Zotero.Translators.init();
-	let xhr = await Zotero.HTTP.request('GET', 'https://api.zotero.org/schema', { responseType: 'json' });
+	let xhr = await Zotero.HTTP.request('GET', '../api/schema', { responseType: 'json' });
 	Zotero.Schema.init(xhr.response);
 	xhr = await Zotero.HTTP.request('GET', '../modules/utilities/resource/dateFormats.json', { responseType: 'json' });
 	Zotero.Date.init(xhr.response);
